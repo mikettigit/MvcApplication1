@@ -1,0 +1,115 @@
+.constructor {position: relative; top: 180px; left: 40px;}
+
+/* window */
+.window {position: absolute; left: 41px; top: 40px; height: 450px; width: 387px; overflow: hidden;}
+    .window.eco {background: url(../images/inputs/window_eco.png) 0px 0px no-repeat;}
+    .window.eco.reverse {background: url(../images/inputs/window_eco_reverse.png) 0px 0px no-repeat;}
+    .window.compact {background: url(../images/inputs/window_compact.png) 0px 0px no-repeat;}
+    .window.compact.reverse {background: url(../images/inputs/window_compact_reverse.png) 0px 0px no-repeat;}
+    .window.lux {background: url(../images/inputs/window_lux.png) 0px 0px no-repeat;}
+    .window.lux.reverse {background: url(../images/inputs/window_lux_reverse.png) 0px 0px no-repeat;}
+    .window .total {float:left; display: block; width: 100%; margin-top: 100px;}
+        .window.compact .total {margin-top: 170px;}
+        .window.lux .total {margin-top: 200px;}
+        .window .total p {text-align: center; color: #777; font: bold 25px/25px Arial, sans-serif;}
+        .window .total .price_dimention {font: bold 17px/17px Arial, sans-serif;}
+            .window .total .price_dimention .price_detail.hidden {display: none;}
+    .window .hash {float:left; display: block; width: 100%; margin-top: 5px;}
+        .window .hash p {text-align: center; color: #777; font: 10px/12px Arial, sans-serif;}
+            .window .hash p a {text-decoration: underline; color: #777;}
+                .window .hash p a:hover {text-decoration: none; color: #c86b28;}
+
+/* driverside */
+.driverside {position: absolute; left: 370px; top: 15px; height: 92px; width: 250px; }
+    
+    #driverside_step{left: 90px; top: -43px;}
+
+    .driverside a {float:left; display: inline; width: 100%;}
+    .driverside a .circle {float:left; display: inline; width: 92px; height: 92px; background: url(../images/inputs/driver.png) 0px 0px no-repeat; }
+        .driverside a .circle.hover {background: url(../images/inputs/driver.png) -92px 0px no-repeat;}
+    .driverside a .caption {float:right; display: inline; text-align: right; font: 15px/15px Arial, sans-serif; color: #777;}
+        .driverside a .caption.hover {float:right; color: #c86b28; }
+    .driverside a .caption span { border-bottom: 1px dotted; font-size: 12px; }
+        .driverside a .caption span.hover { border-bottom: 0px; }
+
+/* heighter */
+.heighter {position: absolute; top: 40px;}
+
+    #heighter_step{left: -30px; top: 175px;}
+
+    .heighter .top {float:left; display: block; width: 100%;}
+        .heighter .top u {float:left; width: 13px; height: 13px; background: url(../images/inputs/input.png) 0px 0px no-repeat;}
+        .heighter .top s {float:left; display: inline; width: 28px; height: 11px; border-top: 2px solid #ccc; }
+
+    .heighter i {float:left; display: block; width: 100%; height: 194px; border-left: 2px solid #ccc;}
+    .heighter .value {float:left; display: block; margin-left: -30px; width: 67px;}
+        .heighter .value s {background: url(../images/inputs/input_sizer.png) -12px 0px no-repeat; width: 14px; }
+        .heighter .value a {float:left; display: block; width: 100%; text-align: center; font: 9px/12px Arial, sans-serif; color: #aaa; font-weight: bold; text-decoration: underline; }
+            .heighter .value a:hover {color: #c86b28;}
+
+    .heighter .bottom {float:left; display: block; width: 100%;}
+        .heighter .bottom u {float:left; width: 12px; height: 12px; background: url(../images/inputs/input.png) 0px -12px no-repeat;}
+        .heighter .bottom s {float:left; display: inline; width: 38px; height: 10px; border-bottom: 2px solid #ccc; }
+
+/* widther */
+.widther {position: absolute; left: 40px; }
+
+    #widther_step{left: 140px; top: -32px;}
+
+    .widther .left {float:left; display: inline; }
+        .widther .left u {display: block; width: 13px; height: 13px; background: url(../images/inputs/input.png) 0px 0px no-repeat;}
+        .widther .left s {display: block; width: 11px; height: 28px; border-left: 2px solid #ccc; }
+
+    .widther i {float:left; display: inline; width: 147px; border-top: 2px solid #ccc;}
+    .widther .value {float:left; display: inline; margin-top: -10px; width: 67px;}
+        .widther .value s {background: url(../images/inputs/input_sizer.png) -12px 0px no-repeat; width: 14px; }
+        .widther .value a {float:left; display: block; width: 100%; text-align: center; text-decoration: underline; font: 9px/12px Arial, sans-serif; color: #aaa; font-weight:bold;}
+            .widther .value a:hover {color: #c86b28;}
+
+    .widther .right {float:left; display: inline; }
+        .widther .right u {display: block; width: 12px; height: 12px; background: url(../images/inputs/input.png) -12px 0px no-repeat;}
+        .widther .right s {display: block; width: 10px; height: 3px; border-right: 2px solid #ccc; }
+
+/* carousel */
+.carousel {position: absolute; height: 212px; width: 200px; overflow: hidden;}
+    .carousel ul {position:absolute;}
+    .carousel li {height: 150px; width: 200px; overflow: hidden;}
+        .carousel li img {height: 100%; width: 100%; }
+    .carousel .topplate {position: absolute; top: 0px; height: 12px; width: 100%; background-color: #fff;}
+        .carousel .topplate a {float:right; display: block; margin-right: 10px; text-decoration: underline; font: 9px/9px Arial, sans-serif; color: #777; font-weight:bold; }
+            .carousel .topplate a:hover {text-decoration: none; color: #c86b28;}
+    .carousel .mask     {position: absolute; top: 12px; height: 150px; width: 200px; background: url(../images/inputs/carousel_arrow.png) 0px 0px no-repeat;}
+        .carousel .mask .magnifier {position: absolute; top: 60px; left: 105px; height: 35px; width: 35px; background: url(../images/inputs/magnifier.png) -35px 0px no-repeat;}
+            .carousel .mask .magnifier:hover { background: url(../images/inputs/magnifier.png) 0px 0px no-repeat;}
+        .carousel .mask .up_turn {position: absolute; top: 5px; left: 105px; height: 20px; width: 38px; background: url(../images/inputs/carousel_turn.png) -38px 0px no-repeat;}
+            .carousel .mask .up_turn:hover { background: url(../images/inputs/carousel_turn.png) 0px 0px no-repeat;}
+        .carousel .mask .down_turn {position: absolute; top: 125px; left: 105px; height: 20px; width: 38px; background: url(../images/inputs/carousel_turn.png) -38px -45px no-repeat;}
+            .carousel .mask .down_turn:hover { background: url(../images/inputs/carousel_turn.png) 0px -45px no-repeat;}
+    .carousel .btmplate {position: absolute; top: 162px; height: 50px; width: 100%; background-color: #fff;}
+        .carousel .btmplate .description {float: right; margin: 5px 10px 0px 0px; }
+            .carousel .btmplate .description p {text-align: right; font: 12px/15px Arial, sans-serif; color: #777; }
+            .carousel .btmplate .description .SelectedItemName {font-size: 15px;}
+                .carousel .btmplate .description .SelectedItemName a {color: #777; text-decoration: underline;}
+                    .carousel .btmplate .description .SelectedItemName a:hover {color: #c86b28; text-decoration: none;}
+            .carousel .btmplate .description .SelectedItemPrice {font: bold 17px/17px Arial, sans-serif; color: #c86b28; margin-top: 5px;}
+#ClothCarousel{ left: 450px; top: 105px; }
+#ClothCarousel_step{left: 10px; top: 0px; z-index: 9999;}
+#ShapeCarousel{ left: 450px; top: 310px; }
+#ShapeCarousel_step{left: 10px; top: 0px; z-index: 9999;}
+
+/* magnet */
+.magnet {position: absolute; left: 73px; top: 483px; height: 30px; width: 318px; }
+    
+    #magnet_step{left: 65px; top: -43px;}
+
+    .magnet a {float:left; display: inline; width: 100%;}
+    .magnet a .image {float:left; display: inline; width: 318px; height: 12px; background: url(../images/inputs/magnet.png) 0px 0px no-repeat; }
+        .magnet a .image.hover { background: url(../images/inputs/magnet.png) 0px -12px no-repeat; }
+        .magnet a .image.hidden { background: url(../images/inputs/magnet.png) 0px -24px no-repeat; }
+    .magnet a .caption {position:relative; top: -20px; width: 100%; text-align: center; font: 15px/15px Arial, sans-serif; color: #777;}
+        .magnet a .caption.hover {float:right; color: #c86b28; }
+    .magnet a .caption span { border-bottom: 1px dotted; font-size: 12px; }
+        .magnet a .caption span.hover { border-bottom: 0px; }
+
+/* step */
+.step {position: absolute; font: 30px Arial, sans-serif; color: #777;}

@@ -1,0 +1,24 @@
+h1 {float:left; display: block; width: 100%; margin: 0px 0px 10px 10px; font: bold 17px/17px Arial, sans-serif; color: #c86b28;}
+.photos {float: left; display: block; width: 100%; margin-left: 10px;}
+    .photos .photo {float: left; display: inline; width: 50%; margin-bottom: 20px;}
+        .photos .photo img {float: left; display: inline; width: 50%; margin-right: 10px;}
+        .photos .photo p { text-align: left; font: 12px/15px Arial, sans-serif; font-style: italic; color: #777; }
+.blocks {float: left; display: block; width: 100%; margin: 0px 0px 10px 10px;}
+    .blocks .mainblock {float:left; display: block; width: 100%;}
+        .blocks .mainblock .description {float: left; display: inline; text-align: left; width: 500px; font: 12px/15px Arial, sans-serif; font-style: italic; color: #777; }
+    .blocks .otherblocks {float:left; display: block; width: 100%;}
+    .blocks .block {float:left; display: inline; width: 200px; height: 300px; margin: 0px 10px 5px 0px; overflow: hidden;}
+        .blocks .block .icon {float:left; display: block; height: 150px; margin-bottom: 2px; overflow: hidden;}
+        .blocks .block .icon img {float:left; display: block; width: 100%; height: 100%;}
+        .blocks .block .icon .mask {position: relative; height: 100%; width: 100%;  background: url(../images/inputs/item_icon.png) 0px 0px no-repeat;}
+        .blocks .block p {float:left; display: block; width: 100%; text-align: left; font: 12px/15px Arial, sans-serif; color: #777; }
+        .blocks .block .prompt {font-size: 10px; line-height: 10px; text-align: center; margin-bottom: 2px;}
+        .blocks .block .ItemName {font-size: 15px; margin-top: 8px;}
+        .blocks .block .ItemPrice {font-weight:bold; color: #c86b28;}
+        .blocks .block .tags a {float:left; display: inline; margin: 2px 5px 2px 0px; text-decoration: underline; font: 10px/10px Arial, sans-serif; color: #777; font-weight:bold;}
+            .blocks .block .tags a:hover {text-decoration: none; color: #c86b28;}
+            
+#clothhelp {width: 188px; margin-left: 22px;}
+    #clothhelp .body .m p {text-align: justify; text-indent: 10px;}
+        #clothhelp .body .m a {text-decoration: underline; color: #777;}
+        #clothhelp .body .m a:hover {text-decoration: none; color: #c86b28;}

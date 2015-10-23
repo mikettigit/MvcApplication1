@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Страница не найдена";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<link href="/Content/Styles/gallery.css" rel="stylesheet" type="text/css" />
+<script src="/Scripts/gallery.js" type="text/javascript"></script>
+
+<div class="mainPageB">
+
+    <div class="textfield">
+        
+        <div class="header">
+            <h1>Вы нашли страницу, которой не существует :)</h1>
+        </div>
+        <div class="subheader"></div>
+
+        <p>
+            Либо Вы человек, внимательно изучивший наш сайт, либо очень везучий, поэтому мы дадим Вам дополнительную скидку - 5%. 
+            Просто напомните нам об этом в момент заказа.
+        </p>
+        <p>
+            А теперь рассчитайте цену <a href="/Constructor">здесь</a>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="sidebar">
+    
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+<div class="clear"></div>

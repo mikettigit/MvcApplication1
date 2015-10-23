@@ -1,0 +1,60 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{
+    ViewBag.Title = "Установка рулонных штор на створки окон";
+    ViewBag.MetaKeywords = "установка рулонная штора на створка пластиковое окно";
+    ViewBag.MetaDescription = "установка рулонных штор на пластиковые окна";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<div class="mainPageB">
+    <div class="textfield">
+
+        <div class="header">
+            <a href="/Constructor">Расчет цены</a> | <a href="/Constructor/Measurement">Правила замера</a> | <a href="/Palette">Подбор ткани</a> | <h1>@ViewBag.Title</h1>
+        </div>
+
+        <div class="subheader" style="margin-left: 295px;">
+            <a href="?t=lux">для Lux</a> | <a href="?t=eco">для Eco</a> | <span class="current_subheader">для Compact</span> (<a class="f1" href="/Systems">в чем отличия систем?</a>)
+        </div>
+
+        <p>
+            <strong>Установка компактной системы (Compact)</strong> не потребует много времени. Проверьте комплектность:
+        </p>
+        <div class="triptych">
+            <div style="width: 60%;">
+                <img src="/Content/Images/Illustrations/inst_compact1.jpg" alt="" />
+            </div>
+            <div style="width: 40%;">
+                <ol type="1">
+                    <li>Рулон с механизмом – 1 шт.</li>
+                    <li>Кронштейны – 2 шт. </li>
+                    <li>Держатели рулона – 2 шт.</li>
+                    <li>Ограничитель управляющей цепи – 1-2 шт.</li>
+                </ol>
+            </div>
+        </div>
+        <p>
+            <strong>Укрепите кронштейны</strong> на оконной раме с помощью саморезов из комплекта, не заворачивая их на всю длину. Приложите рулон к кронштейнам и проверьте горизонтальный уровень. Заверните саморезы до конца.
+        </p>
+        <p>
+            <strong>Защелкните держатели</strong> в пазах кронштейнов.
+        </p>
+        <p>
+            Опустите полотно шторы до края нижнего штапика. Оденьте на цепь управления ограничитель, чтобы полотно не опускалось ниже этого уровня.
+        </p>
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+    </div>
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>
+

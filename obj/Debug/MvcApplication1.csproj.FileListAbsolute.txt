@@ -1,0 +1,124 @@
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\EntityFramework.dll
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\EntityFramework.xml
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.dll
+C:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.xml
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\EntityFramework.dll
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.dll
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\EntityFramework.xml
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.xml
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+D:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\EntityFramework.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\EntityFramework.xml
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\bin\System.Web.Mvc.xml
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\bin\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\bin\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\bin\EntityFramework.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\bin\System.Web.Mvc.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\bin\EntityFramework.xml
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\bin\System.Web.Mvc.xml
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\obj\Debug\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_испорчен_не удалять\MvcApplication1\obj\Debug\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\bin\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\bin\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\bin\EntityFramework.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\bin\System.Web.Mvc.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\bin\EntityFramework.xml
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\bin\System.Web.Mvc.xml
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\obj\Debug\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1_Lite\MvcApplication1\obj\Debug\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1\bin\MvcApplication1.dll.config
+E:\Visual Studio 2010\Projects\MvcApplication1\bin\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\bin\MvcApplication1.pdb
+E:\Visual Studio 2010\Projects\MvcApplication1\bin\System.Web.Mvc.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\bin\EntityFramework.xml
+E:\Visual Studio 2010\Projects\MvcApplication1\bin\System.Web.Mvc.xml
+E:\Visual Studio 2010\Projects\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
+E:\Visual Studio 2010\Projects\MvcApplication1\obj\Debug\MvcApplication1.dll
+E:\Visual Studio 2010\Projects\MvcApplication1\obj\Debug\MvcApplication1.pdb
+E:\Работа\Сайты\MvcApplication1\bin\MvcApplication1.dll.config
+E:\Работа\Сайты\MvcApplication1\bin\MvcApplication1.dll
+E:\Работа\Сайты\MvcApplication1\bin\MvcApplication1.pdb
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Mvc.xml
+E:\Работа\Сайты\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
+E:\Работа\Сайты\MvcApplication1\obj\Debug\MvcApplication1.dll
+E:\Работа\Сайты\MvcApplication1\obj\Debug\MvcApplication1.pdb
+E:\Работа\Сайты\MvcApplication1\bin\Microsoft.Web.Infrastructure.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Helpers.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Mvc.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Razor.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.WebPages.Deployment.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.WebPages.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.WebPages.Razor.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Helpers.xml
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Razor.xml
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.WebPages.xml
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.WebPages.Deployment.xml
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.WebPages.Razor.xml
+E:\Работа\Сайты\MvcApplication1\bin\Microsoft.CSharp.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.ComponentModel.DataAnnotations.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Configuration.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Data.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Data.Entity.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Drawing.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.EnterpriseServices.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Abstractions.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.ApplicationServices.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.DynamicData.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Entity.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Routing.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Web.Services.dll
+E:\Работа\Сайты\MvcApplication1\bin\System.Xml.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\MvcApplication1.dll.config
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\MvcApplication1.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\MvcApplication1.pdb
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\Microsoft.CSharp.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.ComponentModel.DataAnnotations.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Configuration.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Data.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Data.Entity.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Drawing.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.EnterpriseServices.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Abstractions.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.ApplicationServices.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.DynamicData.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Entity.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Helpers.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Mvc.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Razor.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Routing.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Services.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.WebPages.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Xml.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Helpers.xml
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Mvc.xml
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.Razor.xml
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.WebPages.xml
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\obj\Debug\MvcApplication1.csprojResolveAssemblyReference.cache
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\obj\Debug\MvcApplication1.dll
+C:\Trial\__ЗАПАС\Фриланс\Сайты\MvcApplication1\obj\Debug\MvcApplication1.pdb

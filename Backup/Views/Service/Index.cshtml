@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Доставка и другие дополнительные услуги";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<div class="mainPageB">
+    
+    <div class="textfield">
+
+        <div class="header">
+            <h1>@ViewBag.Title</h1>
+        </div>
+        <div class="subheader"></div>
+        <p>
+            <strong>Оформите заказ у нас</strong>, и тогда замер, подбор материалов, доставка, установка будут для Вас бесплатны:
+        </p>
+               <table class="help" style="margin:auto; margin-top: 30px; margin-bottom: 30px; width: 400px;">
+                    <tr class="top">
+                        <td class="l"></td>
+                        <td class="m" style="width: 276px; text-align: left"></td>
+                        <td class="m" style="width: 100px; text-align: center"></td>
+                        <td class="r"></td>
+                    </tr>
+                    <tr class="body">
+                        <td class="l"></td>
+                        <td class="m">Замер оконных створок</td>
+                        <td class="m">бесплатно</td>
+                        <td class="r"></td>
+                    </tr>
+                    <tr class="body">
+                        <td class="l"></td>
+                        <td class="m">Подбор материалов по каталогу образцов</td>
+                        <td class="m">бесплатно</td>
+                        <td class="r"></td>
+                    </tr>
+                    <tr class="body">
+                        <td class="l"></td>
+                        <td class="m">Установка изделий</td>
+                        <td class="m">бесплатно</td>
+                        <td class="r"></td>
+                    </tr>
+                    <tr class="body">
+                        <td class="l"></td>
+                        <td class="m">Доставка заказа в пределах КАД</td>
+                        <td class="m">бесплатно</td>
+                        <td class="r"></td>
+                    </tr>
+                    <tr class="bottom">
+                        <td class="l"></td>
+                        <td class="m"></td>
+                        <td class="m"></td>
+                        <td class="r"></td>
+                    </tr>
+                </table>
+        <p>
+            Также мы работаем в области:
+        </p>
+        <table class="help" style="margin:auto; margin-top: 30px; margin-bottom: 30px; width: 400px;">
+            <tr class="top">
+                <td class="l"></td>
+                <td class="m" style="width: 276px; text-align: left"></td>
+                <td class="m" style="width: 100px; text-align: center"></td>
+                <td class="r"></td>
+            </tr>
+            <tr class="body">
+                <td class="l"></td>
+                <td class="m">Выезд в область за каждые 10 км</td>
+                <td class="m">100 рублей</td>
+                <td class="r"></td>
+            </tr>
+            <tr class="bottom">
+                <td class="l"></td>
+                <td class="m"></td>
+                <td class="m"></td>
+                <td class="r"></td>
+            </tr>
+        </table>
+        <p>
+            <strong>Дополнительные услуги</strong> существуют для Вашего удобства, Вы можете отказаться от них или заказать только некоторые. 
+            Замер и установку очень просто выполнить самостоятельно, а чтобы просмотреть образцы, Вы можете подъехать по одному из наших адресов.
+            Забрать заказ также можно самовывозом.
+        </p>
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+
+    </div>
+
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>

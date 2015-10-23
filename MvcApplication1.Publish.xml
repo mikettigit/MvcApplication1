@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Visual Studio 2010\Projects\MvcApplication1\publish" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Content/Images/Sidebar/bottom2.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Views/Constructor/Cloth.cshtml" publishTime="08/25/2012 21:54:13" />
+    <file relUrl="Views/Constructor/Palette.cshtml" publishTime="08/25/2012 21:58:27" />
+    <file relUrl="Content/Images/Main/shadow.png" publishTime="04/23/2012 15:24:44" />
+    <file relUrl="Global.asax" publishTime="06/25/2012 10:39:17" />
+    <file relUrl="bin/EntityFramework.xml" publishTime="06/25/2012 10:39:27" />
+    <file relUrl="Views/_ViewStart.cshtml" publishTime="06/29/2012 12:59:12" />
+    <file relUrl="Views/Shared/SiteLayout.cshtml" publishTime="08/28/2012 17:24:13" />
+    <file relUrl="Content/Images/Main/FooterContactsBox.png" publishTime="06/29/2012 14:04:10" />
+    <file relUrl="Scripts/measurement.js" publishTime="08/24/2012 15:41:30" />
+    <file relUrl="Content/Images/Main/main.jpg" publishTime="07/01/2012 15:23:57" />
+    <file relUrl="Scripts/ajax_navigation.js" publishTime="07/14/2012 19:09:52" />
+    <file relUrl="Scripts/prompts.js" publishTime="08/24/2012 15:22:35" />
+    <file relUrl="Content/Styles/main.css" publishTime="08/30/2012 14:17:03" />
+    <file relUrl="Content/Styles/constructor.css" publishTime="08/31/2012 10:26:28" />
+    <file relUrl="Content/Images/Sidebar/top1.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Images/Inputs/input_sizer.png" publishTime="07/18/2012 16:10:34" />
+    <file relUrl="Content/Images/Sidebar/topW.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Images/Sidebar/top2.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Images/Sidebar/shadowIndex.jpg" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Views/Shared/Error.cshtml" publishTime="06/25/2012 10:39:17" />
+    <file relUrl="Content/Styles/gallery.css" publishTime="09/04/2012 14:47:18" />
+    <file relUrl="App_Code/CommonHtmlHelpers.cshtml" publishTime="08/23/2012 14:21:42" />
+    <file relUrl="Content/Styles/sidebar.css" publishTime="08/06/2012 13:23:09" />
+    <file relUrl="Views/Constructor/Measurement.cshtml" publishTime="09/02/2012 14:34:14" />
+    <file relUrl="Content/Images/Main/spacer.png" publishTime="04/23/2012 15:24:44" />
+    <file relUrl="Scripts/steps_animator.js" publishTime="08/31/2012 10:26:03" />
+    <file relUrl="App_Code/ConstructorHtmlHelpers.cshtml" publishTime="08/23/2012 15:27:41" />
+    <file relUrl="packages.config" publishTime="06/25/2012 10:39:29" />
+    <file relUrl="Views/Home/Index.cshtml" publishTime="09/04/2012 18:03:39" />
+    <file relUrl="Views/Service/Index.cshtml" publishTime="08/30/2012 16:43:10" />
+    <file relUrl="Content/Images/Inputs/item_icon.png" publishTime="07/27/2012 17:17:18" />
+    <file relUrl="Content/Images/Sidebar/top3.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Images/Sidebar/middleW.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Scripts/driverside.js" publishTime="07/30/2012 15:38:48" />
+    <file relUrl="Content/Images/Sidebar/all_in_basket.png" publishTime="01/20/2011 17:53:05" />
+    <file relUrl="Content/Images/Sidebar/middle2.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Images/Main/footer.png" publishTime="04/23/2012 15:24:44" />
+    <file relUrl="bin/MvcApplication1.pdb" publishTime="08/27/2012 11:37:31" />
+    <file relUrl="Content/Images/Sidebar/top6.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Styles/prompts.css" publishTime="08/30/2012 15:40:02" />
+    <file relUrl="Scripts/gallery.js" publishTime="08/27/2012 16:37:05" />
+    <file relUrl="Content/Styles/cloth.css" publishTime="08/24/2012 16:00:23" />
+    <file relUrl="Content/Images/Sidebar/bottom1.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Content/Images/Sidebar/middle1.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="Views/Constructor/Installation.cshtml" publishTime="08/30/2012 15:56:57" />
+    <file relUrl="Content/Images/Inputs/carousel_arrow.png" publishTime="07/13/2012 16:13:08" />
+    <file relUrl="Web.config" publishTime="09/07/2012 11:52:07" />
+    <file relUrl="Content/Images/Inputs/input.png" publishTime="08/24/2012 11:36:53" />
+    <file relUrl="Scripts/jquery-1.7.2.min.js" publishTime="06/25/2012 12:54:53" />
+    <file relUrl="Content/Styles/palette.css" publishTime="08/24/2012 15:34:18" />
+    <file relUrl="Views/Constructor/Index.cshtml" publishTime="08/30/2012 10:55:37" />
+    <file relUrl="bin/EntityFramework.dll" publishTime="06/25/2012 10:39:27" />
+    <file relUrl="Content/Images/Sidebar/bottomW.png" publishTime="08/17/2012 11:16:41" />
+    <file relUrl="Scripts/constructor.js" publishTime="08/31/2012 10:28:34" />
+    <file relUrl="Content/Images/Sidebar/top4.png" publishTime="04/23/2012 15:24:45" />
+    <file relUrl="bin/MvcApplication1.dll" publishTime="08/27/2012 11:37:31" />
+    <file relUrl="Scripts/carousel.js" publishTime="08/08/2012 15:14:22" />
+    <file relUrl="Views/Web.config" publishTime="06/27/2012 11:35:42" />
+  </publishProfile>
+</publishData>

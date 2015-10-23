@@ -1,0 +1,96 @@
+﻿@using System.Web.Mvc
+@using MvcApplication1.Models
+@using MvcApplication1.Helpers
+
+@helper VisitCard()
+{   
+    SettingsModel settings = SettingsReturner.Get();
+    int hour = DateTime.Now.Hour;
+    int days = (settings.Vacation - DateTime.Now.Date).Days;
+    if (days < 1)
+    {
+        //if (hour >= 9 && hour <= 21) {
+            <noindex>
+                <div class="sidelist visitcard">
+                    <div class="topW">
+                        <p class="service">Любой свободный сотрудник<br/>ответит на Ваш запрос:<br/></p>
+                    </div>
+                    <div class="middleW">
+                
+                        <p class="phone"><i></i><span>@CommonHtmlHelpers.Phone()</span></p>
+                        <p class="email"><span><a href="mailto:@CommonHtmlHelpers.Email()">@CommonHtmlHelpers.Email()</a></span></p>
+                        <p class="employee"><span>@*@CommonHtmlHelpers.Employee()*@</span></p>
+
+                        @*<p class="phone"><i class="disabled"></i><span>8 (911) 769-21-33</span></p>
+                        <p class="employee" style="margin-bottom: 20px;"><span>Мария</span></p>*@
+
+                        <p class="order">ЗАКАЗ и консультации по <br/>
+                            <a href="/Constructor/Measurement">замеру</a>, <a href="/Palette">подбору ткани</a>,<br/>
+                            <a href="/Service">доставке</a>, <a href="/Constructor/Installation">установке</a>
+                        </p>
+
+                    </div>
+                    <div class="bottomW"></div>   
+                </div>
+            </noindex>
+        @*}
+        else
+        {
+            <noindex>
+                <div class="sidelist visitcard">
+                    <div class="topW">
+                        <p class="service">
+                            Мы работаем с 9.00 до 21.00<br/>без обеда и выходных
+                        </p>
+                    </div>
+                    <div class="middleW">
+                
+                        <p class="phone"><i class="disabled"></i><span>@CommonHtmlHelpers.Phone()</span></p>
+                        <p class="email"><span><a href="mailto:@CommonHtmlHelpers.Email()">@CommonHtmlHelpers.Email()</a></span></p>
+                        <p class="employee"><span>@CommonHtmlHelpers.Employee()</span></p>
+
+                        <p class="phone"><i class="disabled"></i><span>8 (911) 778-57-77</span></p>
+                        <p class="employee" style="margin-bottom: 20px;"><span>Мария</span></p>
+
+                        <p class="order">
+                            @if (hour >= 21) {
+                                <text>Сейчас уже поздно, но утром<br/>мы ответим на Ваш вопрос ;)</text>
+                            }
+                            else
+                            {
+                                <text>Сейчас еще рано, но после 9.00 <br/> мы ответим на Ваш вопрос ;)</text>
+                            }
+                        </p>
+                    </div>
+                    <div class="bottomW"></div>   
+                </div>
+            </noindex>
+        }*@
+    }
+    else
+    {
+        <noindex>
+            <div class="sidelist visitcard">
+                <div class="topW">
+                    <p class="phone" style="text-align: center; margin-top: 20px;">МЫ В ОТПУСКЕ</p>
+                    <p class="phone" style="text-align: center; margin-top: 3px;">до @settings.Vacation.ToString("d MMMM yyyy")</p>
+                </div>
+                <div class="middleW">
+                    <p class="order">дождитесь нас -</p>
+                    <p class="order">@DeclensionHelper.GetDeclension(days, "остался", "осталось", "осталось") всего @days.ToString() @DeclensionHelper.GetDeclension(days, "день", "дня", "дней") ;)</p>
+                    <p class="phone" style="text-align: center; margin-top: 10px;">@CommonHtmlHelpers.Phone()</p>
+                    <p class="email" style="text-align: center; margin-top: 1px;"><a href="mailto:@CommonHtmlHelpers.Email()">@CommonHtmlHelpers.Email()</a></p>
+                </div>
+                <div class="bottomW"></div>   
+            </div>
+        </noindex>
+    }
+}
+
+@helper Service()
+    {
+    <text>
+        Мы всегда готовы <strong>БЕСПЛАТНО</strong> помочь Вам на любом этапе заказа - замере, подборе ткани, доставке, установке, демонтаже и замене ткани.
+        Чтобы вызвать мастера, позвоните по телефону <strong>@CommonHtmlHelpers.Phone()</strong> или напишите письмо на <strong><a href="mailto:@CommonHtmlHelpers.Email()">@CommonHtmlHelpers.Email()</a></strong>.
+    </text>
+}

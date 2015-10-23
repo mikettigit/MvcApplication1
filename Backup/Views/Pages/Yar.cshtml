@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Проект на Ярославском проспекте";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<div class="mainPageB">
+    
+    <div class="textfield">
+
+        <div class="header">
+            <h1>@ViewBag.Title</h1> | <a href="/Home">Главная</a>
+        </div>
+        <div class="subheader"></div>
+
+        <p>
+            Комнаты сильно нагревались солнцем, кроме того обстановка квартиры была видна вечером из окон корпуса, расположенного напротив. 
+        </p>
+
+        <div class="triptych">
+			<div style="width: 50%;">
+                <a href="/Content/Images/Projects/Miracle1eco.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Miracle1eco.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+            <div style="width: 50%;">
+                <a href="/Content/Images/Projects/Miracle1eco_2.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Miracle1eco_2.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+        </div>
+        
+        <p>
+            Использована <a href="/Systems">система c коробом</a> без сверления. 
+            Штора защищает от солнца в том числе открывающиеся створки и может быть зафиксирована на любой высоте. 
+        </p>
+
+       <div class="triptych">
+			<div style="width: 100%;">
+                <a href="/Content/Images/Projects/Miracle1eco_3.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Miracle1eco_3.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+        </div>
+
+        <p>
+            Ткань - <a href="/Palette/Cloth/58">Miracle 1</a>.
+            Все элементы системы (короб, направляющие, цепочка и т.д.) - белые, под цвет оконного профиля.
+        </p>
+
+        <div class="triptych">
+			<div style="width: 100%;">
+                <a href="/Content/Images/Projects/Ultima1eco.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Ultima1eco.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+        </div>
+
+        <p>
+            Ткань - <a href="/Palette/Cloth/55">Ultima 1</a>. Все элементы системы так же белые.
+        </p>
+        <p>
+            Стоимость реализации проекта составила 12000 рублей (2 комнаты). Сейчас на похожие проекты мы предлагаем скидку - <strong>5%</strong>.
+            Часто можно договориться с соседями о совместном заказе (замер в один день в нескольких квартирах).
+            Такой заказ позволяет получить <strong>дополнительную скидку 5%</strong> для всех участников.
+        </p>
+
+        <p>
+            Предлагаем изучить наш <a href="/Palette">каталог тканей</a>;
+            прочитать о <a href="/Systems">видах рулонных штор</a>;
+            @*вступить в <a href="http://www.vk.com/miketti">группу ВКонтакте</a>;*@
+            ознакомиться с <a href="/Service">условиями замера, доставки и установки</a>
+        </p>
+
+        <br/>
+        <br/>
+
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+
+    </div>
+
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>

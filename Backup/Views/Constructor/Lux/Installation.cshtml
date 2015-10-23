@@ -1,0 +1,57 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{
+    ViewBag.Title = "Замер и установка рулонных штор на оконный проем";
+    ViewBag.MetaKeywords = "замер установка рулонная штора оконный проем";
+    ViewBag.MetaDescription = "замер и установка рулонных штор на оконные проемы";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<div class="mainPageB">
+    <div class="textfield">
+
+        <div class="header">
+            <a href="/Constructor">Расчет цены</a> | <a href="/Palette">Подбор ткани</a> | <h1>@ViewBag.Title</h1>
+        </div>
+
+        <div class="subheader" style="margin-left: 183px;">
+            <span class="current_subheader">для Lux</span> | <a href="?t=eco">для Eco</a> | <a href="?t=compact">для Compact</a> (<a class="f1" href="/Systems">в чем отличия систем?</a>)
+        </div>
+
+        <p>
+            <strong>Замер шторы, предназначенной для установки на оконный проем (Lux), предельно прост</strong>. С помощью рулетки нужно определить желаемую ширину и высоту <strong>полотна</strong> шторы.
+            Необходимо также учесть, что общая ширина шторы за счет выступающих по бокам кронштейнов будет больше ширины полотна на 2 см с каждой стороны.
+        </p>
+
+        <p>
+            <strong>Монтаж системы</strong> данного вида может производиться несколькими способами - к верхнему откосу оконного проема, к стене над проемом, а также к потолку. Кронштейны системы
+            поворачиваются на 90 градусов, что обеспечивает надежное крепление на горизонтальных и вертикальных поверхностях.
+        </p>
+
+        <p>
+            Штора укомплектована 2-мя кронштейнами, закрепляемыми с помощью саморезов. Так как материалы поверхностей, к которым может крепиться штора, очень разнообразны (это может быть бетон, кирпич, гипсокартон, различные пластиковые панели), то крепеж не входит в комплект. 
+            Его нужно подобрать отдельно. Чаще всего это саморезы 3.8 x 32 или 5 x 60 и соответствующие нейлоновые или металлические дюбели.
+        </p>
+
+        <div class="triptych">
+            <div style="width: 100%;">
+                    <img src="/Content/Images/Illustrations/inst_lux1.jpg" alt="саморезы для крепления рулонной шторы" height="250"/>
+                    <p>саморезы и дюбели для бетона [1],<br/> для гипсокартона и пластика [2]</p>
+            </div>
+        </div>
+
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+    </div>
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>
+

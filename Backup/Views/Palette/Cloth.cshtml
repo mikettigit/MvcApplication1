@@ -1,0 +1,115 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{   
+    ConstructorModel constructor = (ConstructorModel)ViewData["constructor"];
+    Cloth Cloth = (Cloth)ViewData["Cloth"];
+    List<Cloth> Clothes = (List<Cloth>)ViewData["Clothes"];
+    List<Photo> Photos = (List<Photo>)ViewData["Photos"];
+
+    ViewBag.Title = "Ткань " + Cloth.Name + " " + Cloth.SubName;
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<link href="/Content/Styles/palette.css" rel="stylesheet" type="text/css" />
+<link href="/Content/Styles/cloth.css" rel="stylesheet" type="text/css" />
+
+@helper ClothBlock(Cloth item, bool mainblock) {
+    <div id="@item.Id" class="block">
+        <a href="@(mainblock ? "/Constructor/" + (string)ViewData["Hash"] : "/Palette/Cloth/" + item.Id)">
+            <div class="icon">
+                <img src="@item.Img" alt="@(item.Name)&nbsp;@(item.SubName)"/>
+                <div class="mask"></div>
+            </div>
+            <p class="ItemName"><span>@(item.Name)&nbsp;@(item.SubName)</span></p>
+            <p class="ItemPrice"><span>@item.Price&nbsp;руб за @((string)ViewData["Unit"])</span></p>
+        </a>
+        <p class="tags">
+            @foreach (Tag tag in item.Tags)
+            {
+                <a href="/Palette/Index/@tag.Type/@tag.Name">@tag.Name</a>
+            }   
+        </p>
+    </div>
+}
+
+<div class="mainPageB">
+    
+    <div class="textfield">
+        <p style="margin:25px 0 25px 0;">
+            @ConstructorHtmlHelpers.Service()
+        </p>
+            
+        <div class="header" >
+            <h1 style="width:auto;">Ткань @Cloth.Name</h1>
+        </div>
+        <div class="subheader"></div>
+    </div>
+        
+    <div class="blocks">
+        <div class="mainblock">
+            @ClothBlock(Cloth, true)
+            <div class="description">
+                <p>@Html.Raw(Cloth.Description)</p>
+                <p>Максимальная высота шторы при использовании этой ткани: @Cloth.MaxHeight мм<br/> Свяжитесь с нами, если требуется большая высота</p>
+                <p>
+                    <input class="Green gradient_green" type="button" value="Подставить в калькулятор" onclick="document.location='@("/Constructor/" + (string)ViewData["Hash"])'" style="padding:8px; margin-top:10px;"/>
+                    <input class="Green gradient_green" type="button" value="Ткани" onclick="document.location='/Palette/Index#@(Cloth.Id)'" style="padding:8px; margin-top:10px;"/>
+                </p>
+            </div>
+        </div>
+        <div class="otherblocks">
+            @if (Clothes.Count > 0) {
+                <h2 style="margin-left:2px;">Другие цвета:</h2>
+            }   
+            @foreach (Cloth cloth in Clothes)
+            {
+                @ClothBlock(cloth, false);
+            }
+        </div>
+    </div>
+        
+    <div class="photos">
+        @if (Photos.Count > 0) {
+            <h2 style="margin-left:2px;">Фото:</h2>
+        }
+        @{
+            bool odd = true;
+        }
+        @foreach (Photo photo in Photos)
+        {
+            odd = !odd;
+            <div class="photo">
+                <a href="@photo.Img"><img src="@photo.Img" alt="@(Cloth.Name)"/></a>
+                <p>@Html.Raw(photo.Description)</p>
+            </div>
+            if (odd)
+            { 
+                <div class="clear"></div>
+            }
+        }
+    </div>
+
+</div>
+
+<div class="sidebar">
+    
+    @ConstructorHtmlHelpers.VisitCard()
+
+    <table id="clothhelp" class="help">
+        <tr class="top"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+        <tr class="body">
+            <td class="l"></td>
+            <td class="m">
+                <p>К сожалению, экран не может достоверно передать цвет и фактуру ткани</p>
+                <p style="margin-top: 5px;">При подборе ткани для заказа можно свериться с каталогом образцов у <a href="/Service">нашего сотрудника</a></p>
+                <p style="text-align:center; margin-top: 5px;"><img src="/Content/Images/Sidebar/catalog.png" alt="Коллекция рулонных штор"></p>
+            </td>
+            <td class="r"></td>
+        </tr>
+        <tr class="bottom"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+    </table>
+
+</div>
+<div class="clear"></div>
+

@@ -1,0 +1,11 @@
+.gallery {text-indent: 0px; margin: 25px 0 0 40px; display: block; float: left;}
+    .gallery .main_slide {width: 550px; display: inline; float: left; overflow: hidden; margin-right: 5px; margin-bottom: 5px;}
+        .gallery .main_slide img {height: 553px; width: 549px;}
+
+    .gallery .right_slide {width: 115px; height: 560px; display: inline; float: left; }
+        .gallery .right_slide img {width: 105px; height: 104px; margin-bottom: 5px; }
+            .gallery .right_slide img.hover {height: 109px; width: 109px; margin-top: -2px; margin-bottom: 3px;}
+
+    .gallery .bottom_slide {height: 115px; display: block; float: left;}
+        .gallery .bottom_slide img {width: 105px; height: 105px; float: left; margin-right: 6px; }
+            .gallery .bottom_slide img.hover {height: 109px; width: 109px; margin-left: -2px; margin-right: 4px;}

@@ -1,0 +1,150 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+@{
+    ConstructorModel constructor = (ConstructorModel)ViewData["constructor"];
+    ViewBag.Title = "Подбор ткани из каталога для рулонной шторы";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<link href="/Content/Styles/palette.css" rel="stylesheet" type="text/css" />
+
+@helper ItemBlock(string tagType, Cloth item)
+    {
+    <div id="@item.Id" class="block">
+        <a name="@(item.Id)">&nbsp;</a>
+        <a href="/Palette/Cloth/@item.Id">
+            <div class="icon">
+                <img src="@item.Img" alt="@(item.Name)&nbsp;@(item.SubName)"/>
+                <div class="mask"></div>
+            </div>
+            <p class="ItemName"><span>@(item.Name)&nbsp;@(item.SubName)</span></p>
+            <p class="ItemPrice"><span>@item.Price&nbsp;руб за @((string)ViewData["Unit"])</span></p>
+            
+            <p class="ItemDescription"><span>@Html.Raw(item.Description)</span></p>
+        </a>
+        <p class="tags">
+            @foreach (Tag tag in item.Tags)
+            {
+                if (tag.Type != tagType)
+                {
+                    <a href="/Palette/Index/@tag.Type/@tag.Name">@tag.Name</a>
+                }
+            }   
+        </p>
+    </div>   
+}
+
+<div class="mainPageB" style="text-align:center;">
+
+    <div class="textfield">
+        <p style="margin:25px 0 25px 0;">
+            @ConstructorHtmlHelpers.Service()
+        </p>
+            
+        <div class="header" style="text-align:center;">
+            <h1>@ViewBag.Title</h1>
+        </div>
+    </div>
+
+    <div class="subheader" style="margin-left: 90px;">
+        @*<a href="?t=lux">для Lux</a> | <span class="current_subheader">для Eco</span> | <a href="?t=compact">для Compact</a> (<a class="f1" href="/Systems">в чем отличия систем?</a>)*@
+    </div>
+
+    <div class="textfield" style="text-indent: 0; margin: 25px 0 15px 0;">
+        <table class="help" style="text-align:left; margin: 0 0 0 15px; width: 100%;">
+            <tr class="top">
+                <td class="l"></td>
+                <td class="m" style="width: 700px; text-align: left"></td>
+                <td class="r"></td>
+            </tr>
+            <tr class="body">
+                <td class="l"></td>
+                <td class="m" style="text-align:center;">
+                    <span>сортировать по: </span>
+                    @{
+                        List<Tag> TagTypes = (List<Tag>)ViewData["TagTypes"];
+                        string SelectedTagType = (string)ViewData["SelectedTagType"];
+                        bool isfirst = true;
+                        foreach (Tag tagType in TagTypes)
+                        {
+                            if (!isfirst) { 
+                                <span> | </span>
+                            }
+                            else
+                            {
+                                isfirst = false;   
+                            }
+                            if (tagType.Type == SelectedTagType) {
+                                <span style="color: #c86b28; font-weight: bold;">@tagType.Description.ToLower()</span>
+                            }
+                            else
+                            {
+                                <a href="/Palette/Index/@tagType.Type" style="text-decoration:none; font-weight: bold;">@tagType.Description.ToLower()</a>
+                            }
+                        }   
+                    }
+                </td>
+                <td class="r"></td>
+            </tr>
+            <tr class="bottom">
+                <td class="l"></td>
+                <td class="m"></td>
+                <td class="r"></td>
+            </tr>
+        </table>
+    </div>
+
+    @{ 
+        List<Tag> Tags = (List<Tag>)ViewData["Tags"];
+        string CurrentTagName = "";
+        foreach (Tag tag in Tags)
+        {
+            if (tag.Name != CurrentTagName)
+            {
+                CurrentTagName = tag.Name;
+                <h2 style="text-align:center;">@CurrentTagName</h2>
+            }
+            Cloth item = (tag.Owner as Cloth);
+            @ItemBlock(tag.Type, item);
+        }
+
+        List<Cloth> UntagedItems = (List<Cloth>)ViewData["UntagedItems"];
+        if (UntagedItems.Count > 0)
+        {
+            <h2>@((Tags.Count > 0) ? "Остальные" : "")</h2>
+            foreach (Cloth item in UntagedItems)
+            {
+                @ItemBlock("", item);
+            }
+        }
+    }
+
+    <div class="textfield"> 
+        <p>
+            <a name="222"></a>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+    </div>
+
+</div>
+
+<div class="sidebar">
+    
+    @ConstructorHtmlHelpers.VisitCard()
+
+    <table id="clothhelp" class="help">
+        <tr class="top"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+        <tr class="body">
+            <td class="l"></td>
+            <td class="m">
+                <p>К сожалению, экран не может достоверно передать цвет и фактуру ткани</p>
+                <p style="margin-top: 5px;">При подборе ткани для заказа можно свериться с каталогом образцов у <a href="/Service">нашего сотрудника</a></p>
+                <p style="text-align:center; margin-top: 5px;"><img src="/Content/Images/Sidebar/catalog.png" alt="Коллекция рулонных штор"></p>
+            </td>
+            <td class="r"></td>
+        </tr>
+        <tr class="bottom"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+    </table>
+
+</div>
+<div class="clear"></div>

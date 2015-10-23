@@ -1,0 +1,288 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent; border: 0; margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal; margin: 0; padding: 0;}
+i, b, u, s {font-style: normal; font-weight: normal; text-decoration: none;}
+ol, ul, li {margin: 0; padding: 0; //list-style: none;}
+blockquote {quotes: none;}
+blockquote:before, blockquote:after {content: ''; content: none;}
+del {text-decoration: line-through;}
+
+body {background: #fff url(../images/main/main.jpg) repeat-x; margin: 0; padding: 0; font: normal 12px Tahoma, Geneva, sans-serif; behavior: url("/Scripts/discounter/csshover.htc");}
+img {border: 0}
+a {text-decoration: none; outline: none; color: #777;}
+a:hover {color: #c86b28;}
+form {margin: 0; padding: 0; border: 0; background: transparent;}
+input:focus, textarea:focus {outline: none;}
+.clear {clear: both;}
+.shadowBG {background: url(../images/main/shadow.png) 50% 160px no-repeat;}
+.wrap {width: 980px; margin: 0 auto; padding: 0 0 30px 0;  //position: inherit;}
+
+/* -=TOWER=- */
+.tower {width: 980px; margin: 0 auto; position: relative; //z-index: 99;}
+.towertop {height: 90px; overflow: hidden;}
+	/* Logo */
+.main_logo {background: url(../images/mary/logobiz.png) 0 0 no-repeat; width: 384px; height: 44px; display: inline-block; float: left;	margin: 56px 0 0 0;}
+.ruppy {position: absolute; left: 175px; top: 55px; color: #fff; font-size: 14px; font-weight: bold;}
+.ruppy p {font-size: 12px !important; font-weight: normal;}
+
+.downloadprice {background: url(../images/mary/downloadprice.png) 0 100% no-repeat; width: 320px; display: inline-block; position: absolute; top: 10px; left: 50%; padding: 10px 0 10px 0; margin: 0 0 0 -160px; text-align: center;}
+.downloadprice a {color: #fff; text-decoration: underline; font-weight: bold;}
+.downloadprice a:hover {text-decoration: none;}
+
+	/* Chat */
+.chat {position: absolute; top: 21px; right: 10px; display: inline-block; height: 16px; line-height: 16px; color: #fff; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; text-decoration: underline; padding: 0 0 0 20px;}
+.chat img {position: absolute; top: 0; left: 0;}
+.chat:hover {color: #f4ccaf; text-decoration: none;}
+
+/* CommonPhone */
+.CommonPhone {position: absolute; top: 55px; right: 0; padding: 0 0 0 0; text-align: right; display: inline-block; width: auto;}
+.CommonPhone .cpNumber {font-size: 26px ; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: #fff; margin: 0; padding: 0; text-shadow: 0 -1px 0 #888; display: block; line-height: 32px;}
+.CommonPhone .cpTitle {font-size: 12px; color: #fff;}
+
+.Federal {font-size: 26px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; color: #fff; margin: 0; padding: 0; text-shadow: 0 -1px 0 #888; line-height: 32px; position: absolute; top: 54px; left: 415px; display: inline-block;}
+
+/* MarketAdress */
+.MarketAdress {font-size: 12px; color: #e2b38d; float: right; display: inline-block; padding: 0 0 0 20px; //z-index: 9999; font-family: Arial, Helvetica, sans-serif; text-align: right;}
+.MarketAdress span {display: block; overflow: hidden;}
+.MarketAdress span.mPhone {padding: 5px 0 0 0;}
+.MarketAdress span.mPhone b {font-weight: bold;}
+.MarketAdress span i {float: left; display: inline-block; text-align: right; color: #e2b38d; width: 115px;}
+.MarketAdress span a {display: inline-block; margin: 0 0 3px 0; color: #fff; text-align: left; text-decoration: underline; padding: 0 12px 0 0; background: url(../images/mary/MarketRoadh.png) 100% 1px no-repeat;}
+.MarketAdress span a:hover {text-decoration: none; color: #e2b38d; background: url(../images/mary/MarketRoad.png) 100% 1px no-repeat;}
+.MarketAdress span b {display: block; color: #fff; text-align: left;}
+.mPhoneList {padding: 0 0 6px 0;}
+.mPhoneList .PhoneListButton a {font-weight: bold; background: none !important; border-bottom: 1px dashed #fff; color: #fff; text-decoration: none; padding: 0;}
+.mPhoneList .PhoneListButton a:hover {border-bottom: 1px dashed #a14514;}
+.MarketAdress .PhoneList {background: #a14514 url(../images/main/footer.png) 0 -100px repeat-x; position: absolute; top: 20px; right: 0; border-radius: 10px 0 10px 10px; -moz-border-radius: 10px 0 10px 10px; -webkit-border-radius: 10px 0 10px 10px; display: none; z-index: 3; box-shadow: 0 1px 20px #fff; -moz-box-shadow: 0 1px 20px #fff; -webkit-box-shadow: 0 1px 20px #fff; overflow: hidden; border: 1px solid #cbb562;}
+.MarketAdress .PhoneList li {border-top: 1px solid #CB8754; color: #fff; padding: 6px 12px; text-align: left; cursor: pointer; white-space: nowrap;}
+.MarketAdress .PhoneList li:hover {text-shadow: 0 -1px 0 #822b00;}
+
+	/* Login */
+.knight {color: #fff; text-align: right; position: absolute; top: 21px; left: 175px; font-size: 12px; font-family: Arial, Helvetica, sans-serif;}
+.knight .enter, .knight .exit {color: #fff; font-weight: normal; text-align: left; padding: 0 0 0 20px; background: url(../images/mary/enter.png) 0 1px no-repeat; height: 17px; line-height: 17px; display: inline-block; text-decoration: underline;}
+.knight .enter:hover, .knight .exit:hover {color: #f4ccaf; text-decoration: none;}
+.knight .exit {margin: 0 40px 0 0;}
+.knight .private {color: #fff; text-decoration: underline; padding: 0 0 0 20px; background: url(../images/mary/private.png) 0 1px no-repeat; height: 17px; line-height: 17px; display: inline-block;}
+.knight .private:hover {color: #e2b38d; text-decoration: none;} 
+
+.mikettilogo {float: left; color: #fff; margin-top: 25px; text-align: right;}
+    .mikettilogo .mikettiname{font-size: 24px; font-weight: bold; text-align:center; letter-spacing: 5px; }
+    .mikettilogo .curregion {font-size: 9px; font-weight: bold; background-color:#fff; color:#c86b28; letter-spacing: 1px; text-align:center;}
+
+.contact {float: right; color: #fff; margin-top: 25px; text-align: right;}
+    .contact .phone{font-size: 24px; font-weight: bold; text-align:center; }
+    .contact .curregion {font-size: 18px; font-weight: bold;  letter-spacing: 1px; text-align:right;}
+
+.towerbottom {height: 54px; overflow: hidden;}
+	/* Menu */
+.navigation {float: left; //padding: 0 0 0 10px;}
+.naviJ {background: none; color: #fff; position: relative; display: inline-block; margin: 0 10px; padding: 15px 5px 0 5px; height: 40px;  font-size: 12px; font-weight: bold;}
+.naviJ span, .naviJs span {color: #fff; font-size: 11px; font-weight: normal;}
+.naviJ i, .naviJ b, .naviJs i, .naviJs b {position: absolute; height: 55px; width: 10px; top: 0px; _top: 1px;}
+.naviJ i, .naviJs i {left: -10px; background: none;}
+.naviJ b, .naviJs b {right: -10px; background: none;}
+	/* Hover */
+.naviJ:hover {background: url(../images/main/menu_input.png) 0 -208px repeat-x !important; color: #fff !important;}
+.naviJ:hover span {color: #fff !important;}
+.naviJ:hover i, .naviJ:hover b {top: 0px;}
+.naviJ:hover i {background: url(../images/main/menu_input.png) 0 -263px no-repeat !important;}
+.naviJ:hover b {background: url(../images/main/menu_input.png) -10px -263px no-repeat !important;}
+	/* Current */
+.naviJs {background: url(../images/main/menu_input.png) 0 -96px repeat-x; color: #cc6500; position: relative; display: inline-block; margin: 0 10px; padding: 15px 5px 0 5px; height: 40px; font-size: 12px; font-weight: bold;}
+.naviJs span {color: #000000; font-weight: normal; font-size: 11px;}
+.naviJs i {background: url(../images/main/menu_input.png) 0 -151px no-repeat; font-size: 1px; _background-position: 0 -152px;}
+.naviJs b {background: url(../images/main/menu_input.png) -10px -151px no-repeat; font-size: 1px; _background-position: -10px -152px;}
+	/* Basket */
+.basketAll {position: absolute; right: 15px; top: 0; background: url(../images/mary/basket_all.png) top right no-repeat; width: 20px; height: 20px; padding: 2px 0 0 0; text-align: center; color: #fff; font-size: 10px;}
+	/* Search */
+.search {float: right; width: 202px; height: 28px; margin: 15px 0 0 0;}
+.searchX {float: left; background: url(../images/mary/search.png) 0 0 no-repeat; width: 156px; height: 28px;}
+.searchX input {background: transparent; margin: 5px 4px 0 10px; border: 0px; font-weight: bold; font-size: 12px; color: #fff !important; font-family: Arial, Helvetica, sans-serif;}
+.searchRight {float: left; background: url(../images/mary/search.png) 100% 0 no-repeat; width: 42px; height: 28px; cursor: pointer;}
+/* -=TOWER END=- */
+
+/* -=CASTLE=- */
+.castle {width: 980px; margin: 0 auto; background: #fff;}
+.mainPage, .pricePage {float: left; padding: 15px 0 15px 15px; width: 740px;}
+.mainPageB {padding: 15px;}
+.flagstaff {padding: 0 0 0 5px;}
+.pricePage {position: relative; //position: inherit;}
+.fullPage {float: left; padding: 15px; width: 950px;}
+/* - RightBar - */
+.sidebar {float: right; width: 220px; margin: 0; right: -5px;}
+
+/* -=CATACOMS=- */
+.catacombs {height: 190px; width: 945px; margin: 0 auto; border-top: 1px solid #e8e8e8; background: url(../images/main/footer.png) 0 0 repeat-x;}
+.catacombs {padding: 14px 10px 0 25px;}
+.catacombs a {text-decoration: none;}
+.CatLinksBox {width: 190px; float: left;}
+.pointbox {width: 350px; float: right;}
+.CatLinksBox p {border-bottom: 1px solid #e8e8e8; padding: 2px 10px 3px;}
+	.qwer1 {border-bottom: 1px solid #CB8754 !important; margin: 50px 0 0 0;}
+	.qwer1 a, .qwer2 a {color: #fff !important;}
+	.qwer1 a:hover, .qwer2 a:hover {color: #e2b7a2!important;}
+	.qwer2 {border-bottom: 1px solid #CB8754 !important;}
+.CatLinksBox p a {color: #777;}
+.CatLinksBox p a:hover {color: #c86b28;}
+.CatFAQBox {display: inline-block; margin: 15px 0 0 300px; width: 90px; height: 35px; background: url(../images/mary/bizon.png) -43px -154px no-repeat; overflow: hidden; float: left;}
+.CatInfoBox {background: url(../images/main/FooterContactsBox.png) 0 0 no-repeat; padding: 3px 5px; margin: 10px 0 0 0; height: 42px; overflow: hidden; text-align: center; width: 150px; color: #888; float: right;}
+	.dotted {border-bottom: 1px dotted #ddd;}
+.CatInfoBox a {color: #777;}
+    .CatInfoBox a:hover {color: #c86b28;}
+.CatInfoBox p {padding: 3px 0;}
+.CatCopyBox {text-align: right; width: 350px; float: right; margin: 52px 10px 0 40px; color: #e2b7a2; font-size: 11px; display: inline;}
+.CatLogoBox {background: url(../images/mary/logobizf.png) 0 0 no-repeat; width: 115px; height: 32px; overflow: hidden; display: inline; float: right; margin: 65px 30px 0 0;}
+.CatCountersBox {display: inline; float: left; margin: 85px 0 0 -420px;}
+
+	/* Footer_Image */
+.superimage {position: relative; float: left; top: 13px; left: -30px; background: url(../images/main/help.png) no-repeat; width: 45px; height: 48px; display: none;}
+
+	/* UniversalInput */
+.unit {float: left; display: inline-block;}
+.unit input {float: left; height: 15px; padding: 3px 0 2px 0; border-top: 2px solid #ccc; border-left: 0px; border-right: 0px; border-bottom: 2px solid #ccc;}
+.unit u {float: left; height: 24px; width: 12px; background: url(../images/inputs/input.png) -24px 0px no-repeat;}
+.unit s {float: left; height: 24px; width: 12px; background: url(../images/inputs/input.png) -36px 0px no-repeat}
+.RedDevil input {background: url(../images/main/menu_input.png) 0 -48px repeat-x !important;}
+.RedDevil u {background: url(../images/main/menu_input.png) 0px -72px no-repeat !important;}
+.RedDevil s {background: url(../images/main/menu_input.png) -10px -72px no-repeat !important}
+	/* Loading */
+#progressCursor {z-index: 12000; position: absolute; width: 20px; height: 22px; top: 0px; left: 0px; background: url(../images/mary/loading.png) 0 0;}
+#progressMessage {z-index: 12000; position: absolute; padding: 6px 10px;  top: -4px; left: 25px; background: url(../images/modalwindow/bg.png) 0 0; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-right: 6px; border: 1px solid #fff; color: #fff; text-align: center; -moz-box-shadow: 0 0 10px #000; -webkit-box-shadow: 0 0 10px #000; box-shadow: 0 0 10px #000; white-space: nowrap;}
+	/* TestWorkSideBar */
+.Mainy {width: 191px; height: 72px; background: url(../images/mary/bizon.png) 0 -191px no-repeat; text-align: center; margin: 5px 0 0 5px;}
+.Mainy p {margin: 0; padding: 8px 0 10px 0; color: #888; font-size: 11px}
+	/* Units */
+.unit40 {width: 40px;}
+.unit45 {width: 45px;}
+.unit100 {width: 90px;}
+.unit130 {width: 130px; _width: 125px;}
+.unit225 {width: 215px;}
+.unit235 {width: 235px;}
+.unit350 {width: 350px;}
+.unit482 {width: 482px;}
+	/* Checkbox */
+.willyA, .willyB {padding: 0 0 0 20px; cursor: default; height: 15px;}
+.willyA {background: transparent url(../images/mary/bizon.png) -260px -233px no-repeat;}
+.willyB {background: transparent url(../images/mary/bizon.png) -260px -248px no-repeat;}
+
+.furjbqy a {background: url(../images/mary/otzivh.png) 0 0 no-repeat !important; width: 31px; height: 159px; display: block;}
+.furjbqy a:hover {background: url(../images/mary/otziv.png) 0 0 no-repeat !important;}
+.furjbqy a img {display: none !important;}
+
+
+.vanessa ul, .vanessa ol {padding: 0 0 10px 20px;}
+.vanessa h1 {padding: 0 0 20px 0; font-size: 24px; color: #cc6500;}
+.vanessa h2 {padding: 0 0 10px 0; font-size: 16px; color: #cc6500;}
+.vanessa li {list-style: disc; padding: 0 0 5px 0;}
+.vanessa p {line-height: 18px; padding: 0 0 10px 0;}
+.vanessa em {font-size: 12px;}
+
+.vanessa {padding: 15px 0 10px 0;}
+.vanessa a {color: #cc6500; text-decoration: underline;}
+.vanessa a:hover {text-decoration: none;}
+.vanessa .bold {font-weight: bold;}
+.vanessa .italic {font-style: italic;}
+.vanessa .underline {text-decoration: underline;}
+
+.helper ul, .helper ol {padding: 0 0 20px 20px;}
+.helper ul li, .helper ol li {list-style: disc;}
+
+.er404 {background: url(../images/mary/404.jpg) 40px 40px no-repeat; padding: 40px 40px 40px 480px; min-height: 280px; _height: 280px; font-family: Arial, Helvetica, sans-serif;}
+.er404 h1 {font-size: 30px; color: #333; padding: 0 0 30px 0;}
+.er404 p {font-size: 14px; color: #555; padding: 0 0 15px 0;}
+.er404 blockquote {padding: 0 0 0 20px; color: #777;}
+.er404 a {text-decoration: underline; color: #950000;}
+.er404 a:hover {text-decoration: none;}
+
+.PromoList {padding: 10px 10px 0 10px;}
+.PromoList a {display: inline-block; float: left; width: 300px; height: 180px; margin: 10px; position: relative; overflow: hidden; border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;}
+.PromoList a img {position: absolute; z-index: 1;}
+.PromoList a i {display: inline-block; width: 300px; height: 180px; position: absolute; visibility: hidden; background: url(../images/modalwindow/bgw.png) 0 0 repeat; z-index: 2;}
+.PromoList a i span {display: inline-block; padding: 8px 15px; font-size: 16px; color: #333; font-weight: bold; text-shadow: 0 1px 0 #fff; font-family: Arial, Helvetica, sans-serif; margin: -15px 0 0 -85px; top: 50%; left: 50%; position: absolute;}
+.mainPageB {float: left; padding: 15px 0 15px 15px; width: 740px;}
+
+.castleB {padding: 15px 10px; width: 960px !important; margin: 0 auto; background: url(../images/mary/login.png) bottom left no-repeat;}
+.castleB h1 {font-size: 22px; padding: 10px 0;}
+.castleB p {color: #444;}
+.castleB .field {background: #fff; padding: 7px 10px; border: 1px solid #bbb; font-size: 13px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; border-radius: 10px; -moz-border-radius: 10px; -webkit-border-radius: 10px; display: inline-block; vertical-align: top;}
+.castleB .w300 {width: 300px; margin: 5px 0 10px 0;}
+.castleB .w220 {width: 220px; margin: 5px 5px 10px 0;}
+.castleB .w190 {width: 190px; margin: 5px 5px 10px 0;}
+.castleB form .PassField {background: #fff url(../images/mary/PassField.png) 13px 10px no-repeat;}
+.castleB form .errorField {border: 1px solid #f18000; box-shadow: 0 0px 10px #f18000; -moz-box-shadow: 0 0px 10px #f18000; -webkit-box-shadow: 0 0px 10px #f18000;}
+.MyAccount {overflow: hidden; float: left; width: 460px; height: 270px; position: relative;}
+.MyAccount form {padding: 15px 0 0 0;}
+
+.maBox1 {width: 430px; position: absolute; height: 270px; top: 0; left: -480px; padding: 0 15px;}
+.call_maBox1 {display: inline-block; margin: 14px 0 0 10px; text-decoration: underline; color: #f18000; cursor: pointer; vertical-align: top;}
+.call_maBox1:hover {text-decoration: none;}
+.maBox2 {width: 430px; position: absolute; height: 270px; top: 0; left: 0; padding: 0 15px;}
+.call_maBox2 {display: inline-block; margin: 14px 0 0 10px; text-decoration: underline; color: #f18000; cursor: pointer; vertical-align: top;}
+.call_maBox2:hover {text-decoration: none;}
+.call_maBox3 {display: inline-block; margin: 0 0 14px 10px; text-decoration: underline; color: #f18000; cursor: pointer; vertical-align: top;}
+.call_maBox3:hover {text-decoration: none;}
+.GetAccount {float: right; width: 460px; height: 270px; position: relative;}
+
+.agree {display: inline-block; font-size: 11px;}
+.ButtonBox {position: absolute; bottom: 10px; left: 0; width: 100%; text-align: center;}
+
+/* Buttons */
+.Green, .Blue, .Red, .Grey {display: inline-block; color: #fff; font-size: 11px; font-weight: bold; text-decoration: none; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.Green:hover, .Blue:hover, .Red:hover {opacity: 0.8;}
+.Green {text-shadow: 0 -1px 0 #4aa213; border: 1px solid #72ac30;}
+.Blue {text-shadow: 0 -1px 0 #1a4b73; border-top: 1px solid #489ac0; border-bottom: 1px solid #f2f1f1;}
+.Red {text-shadow: 0 -1px 0 #731a1a; border: 1px solid #a61111;}
+.Grey {text-shadow: 0 1px 0 #fff; border: 1px solid #ccc;}
+/* Buttons */
+
+/* Colors */
+.gradient_grey {
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top, #efefef 0%, #dddcdd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#dddcdd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #efefef 0%,#dddcdd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #efefef 0%,#dddcdd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #efefef 0%,#dddcdd 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #efefef 0%,#dddcdd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddcdd',GradientType=0 ); /* IE6-9 */
+}
+.gradient_green {
+	background: #acde56; /* Old browsers */
+	background: -moz-linear-gradient(top,  #acde56 0%, #4aa213 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#acde56), color-stop(100%,#4aa213)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #acde56 0%,#4aa213 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #acde56 0%,#4aa213 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #acde56 0%,#4aa213 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #acde56 0%,#4aa213 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acde56', endColorstr='#4aa213',GradientType=0 ); /* IE6-9 */
+}
+.gradient_blue, .PriceTree li.select span.topLevel, .List_offices ul li.select a {
+	background: #61b8e5; /* Old browsers */
+	background: -moz-linear-gradient(top,  #61b8e5 0%, #4194d8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#61b8e5), color-stop(100%,#4194d8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #61b8e5 0%,#4194d8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #61b8e5 0%,#4194d8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #61b8e5 0%,#4194d8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #61b8e5 0%,#4194d8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b8e5', endColorstr='#4194d8',GradientType=0 ); /* IE6-9 */
+}
+.gradient_red {
+	background: #e24c4b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e24c4b 0%, #770005 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e24c4b), color-stop(100%,#770005)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e24c4b 0%,#770005 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e24c4b 0%,#770005 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e24c4b 0%,#770005 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e24c4b 0%,#770005 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e24c4b', endColorstr='#770005',GradientType=0 ); /* IE6-9 */
+}
+.gradient_dark_grey {
+	background: #efefef; /* Old browsers */
+	background: -moz-linear-gradient(top, #efefef 0%, #dddcdd 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#dddcdd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #efefef 0%,#dddcdd 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #efefef 0%,#dddcdd 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #efefef 0%,#dddcdd 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #efefef 0%,#dddcdd 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddcdd',GradientType=0 ); /* IE6-9 */
+}
+/* Colors */

@@ -1,0 +1,93 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{
+    ViewBag.Title = "Установка рулонных штор на створки окон";
+    ViewBag.MetaKeywords = "установка рулонная штора на створка пластиковое окно";
+    ViewBag.MetaDescription = "установка рулонных штор на пластиковые окна";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<div class="mainPageB">
+    <div class="textfield">
+
+        <div class="header">
+            <a href="/Constructor">Расчет цены</a> | <a href="/Constructor/Measurement">Правила замера</a> | <a href="/Palette">Подбор ткани</a> | <h1>@ViewBag.Title</h1>
+        </div>
+
+        <div class="subheader" style="margin-left: 295px;">
+            @*<a href="?t=lux">для Lux</a> | <span class="current_subheader">для Eco</span> | <a href="?t=compact">для Compact</a> (<a class="f1" href="/Systems">в чем отличия систем?</a>)*@
+        </div>
+
+        <p>
+            <strong>Установка системы с коробом и направляющими (Eco)</strong> не потребует много времени. Проверьте комплектность:
+        </p>
+        <div class="triptych">
+            <div style="width: 60%;">
+                <img src="/Content/Images/Illustrations/inst1.jpg" alt="" />
+            </div>
+            <div style="width: 40%;">
+                <ol type="1">
+                    <li>Короб – 1 шт.</li>
+                    <li>Кронштейны из монтажного профиля – 1-5 шт. (в зависимости от размера шторы).</li>
+                    <li>Направляющие – 2 шт.</li>
+                    <li>Заглушки направляющих – 1 комплект.</li>
+                    <li>Фиксатор цепи управления – 1 шт.</li>
+                    <li>Ограничитель управляющей цепи – 1-2 шт.</li>
+                </ol>
+            </div>
+        </div>
+        <p>
+            <strong>Размеcтите кронштейны</strong> из монтажного профиля на коробе. Желательно сделать это так, чтобы кронштейны не упирались в боковые крышки короба, а отступали от них примерно на 5 см. Это позволит в дальнейшем перед установкой направляющих выровнить короб по горизонтали.
+        </p>
+
+        <div class="triptych">
+            <div style="width: 100%;">
+                <img src="/Content/Images/Illustrations/inst2.jpg" alt="" />
+            </div>
+        </div>
+        <div class="triptych">
+            <div style="width: 100%;">
+                <a href="/Content/Images/Illustrations/inst2-2.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/inst2-2.jpg" alt="" height="150" />
+                    <p>отрезок короба (образец) <br/ > с установленным кронштейном</p>
+                </a>
+            </div>
+        </div>
+
+        <p>
+            <strong>Вымойте створку окна</strong>. Снимите защитную пленку со скотча на монтажных кронштейнах. Приложите короб к створке в месте крепления и плотно прижмите. При необходимости выровните короб по горизонтали.
+        </p>
+        <div class="triptych">
+            <div style="width: 100%;">
+                <img src="/Content/Images/Illustrations/inst3.jpg" alt="" />
+            </div>
+        </div>
+        <p>
+            <strong>Снимите защитную пленку</strong> со скотча на 100-150 мм сверху направляющей. Вставьте направляющую до упора под короб.
+        </p>
+        <div class="triptych">
+            <div style="width: 100%;">
+                <img src="/Content/Images/Illustrations/inst4.jpg" alt="" />
+            </div>
+        </div>
+        <p>
+            <strong>Прижмите отрезок направляющей</strong> со снятой защитной пленкой к поверхности рамы. Вытягивая защитную пленку скотча из-под направляющей, наклейте направляющую по всей высоте. Снизу установите заглушки.
+        </p>
+        <p>
+            Полностью опустите полотно шторы, чтобы нижняя планка коснулась заглушек на направляющих. Оденьте на цепь управления ограничитель, чтобы полотно не опускалось ниже уровня заглушек. При необходимости установите фиксатор цепи, его можно закрепить с помощью саморезов на самой раме или приклеить к направляющей.
+        </p>
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+    </div>
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>
+

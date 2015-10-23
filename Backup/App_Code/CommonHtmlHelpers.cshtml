@@ -1,0 +1,35 @@
+﻿@using System.Web.Mvc
+@using MvcApplication1.Models
+
+@helper Phone()
+{      
+    SettingsModel settings = SettingsReturner.Get();       
+    @settings.Phone
+}
+
+@helper Email()
+{      
+    SettingsModel settings = SettingsReturner.Get();       
+    @settings.Email
+}
+
+@helper Employee()
+{      
+    SettingsModel settings = SettingsReturner.Get();       
+    @settings.Employee
+}
+
+@helper Year()
+{      
+    @DateTime.Now.Year
+}
+
+@helper MenuItemClass(string ControllerName, string CurrentControllerName)
+{
+    @((ControllerName.ToLower() == CurrentControllerName.ToLower()) ? "naviJs" : "naviJ");
+} 
+
+@helper MenuItemClass(string ControllerName, string CurrentControllerName, string ActionName, string CurrentActionName)
+{
+    @((ControllerName.ToLower() == CurrentControllerName.ToLower() && ActionName.ToLower() == CurrentActionName.ToLower()) ? "naviJs" : "naviJ");
+}    

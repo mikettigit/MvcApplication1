@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Проект на Ленинградской улице (Кудрово)";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<div class="mainPageB">
+    
+    <div class="textfield">
+
+        <div class="header">
+            <h1>@ViewBag.Title</h1> | <a href="/Home">Главная</a>
+        </div>
+        <div class="subheader"></div>
+
+        <p>
+            Лоджия сильно нагревалась солнцем, кроме того обстановка квартиры была видна вечером из окон корпуса, расположенного напротив.
+            Система была установлена на окна из металлического профиля, не имеющие штапика. 
+        </p>
+
+        <div class="triptych">
+			<div style="width: 50%;">
+                <a href="/Content/Images/Projects/Miracle10compact_2.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Miracle10compact_2.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+			<div style="width: 50%;">
+                <a href="/Content/Images/Projects/Miracle10compact_3.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Miracle10compact_3.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+        </div>
+        
+        <p>
+            Использована доработанная <a href="/Systems">система без короба</a> без сверления. 
+            Штора защищает от солнца открывающиеся створки и может быть развернута ниже на маленькие окошки,
+            расположенные под этими створками. Внизу штора фиксируется магнитами.
+        </p>
+
+        <div class="triptych">
+            <div style="width: 100%;">
+                <a href="/Content/Images/Projects/Miracle10compact.jpg" target="_blank">
+                    <img src="/Content/Images/Projects/Miracle10compact.jpg" alt="@ViewBag.Title" height="300" />
+                    <p>увеличить</p>
+                </a>
+            </div>
+        </div>
+
+        <p>
+            Ткань - <a href="/Palette/Cloth/135">Miracle 10</a>.
+            Все элементы системы (кронштейны, нижняя планка, цепочка и т.д.) - коричневые, под цвет оконного профиля.
+        </p>
+
+        <p>
+            Стоимость реализации проекта составила 12 тыс. рублей. Сейчас на похожие проекты мы предлагаем скидку - <strong>10%</strong>.
+            Часто можно договориться с соседями о совместном заказе (замер в один день в нескольких квартирах).
+            Такой заказ позволяет получить <strong>дополнительную скидку 5%</strong> для всех участников.
+        </p>
+
+        <p>
+            Предлагаем изучить наш <a href="/Palette">каталог тканей</a>;
+            прочитать о <a href="/Systems">видах рулонных штор</a>;
+            @*вступить в <a href="http://www.vk.com/miketti">группу ВКонтакте</a>;*@
+            ознакомиться с <a href="/Service">условиями замера, доставки и установки</a>
+        </p>
+
+        <br/>
+        <br/>
+
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+
+    </div>
+
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>

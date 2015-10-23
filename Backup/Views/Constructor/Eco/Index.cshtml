@@ -1,0 +1,222 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{
+    ConstructorModel constructor = (ConstructorModel)ViewData["constructor"];
+    PaletteModel palette = (PaletteModel)ViewData["palette"];
+
+    ViewBag.Title = "Калькулятор цены рулонных штор";
+    ViewBag.MetaKeywords = "калькулятор расчет цена купить рулонная штора";
+    ViewBag.MetaDescription = "калькулятор - расчет цены рулонных штор на пластиковые окна";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+    
+    string hashlink = HttpContext.Current.Request.Url.AbsoluteUri + "/";
+    if (HttpContext.Current.Request.Url.Query.Length > 0)
+    {
+        hashlink = hashlink.Replace(HttpContext.Current.Request.Url.Query, constructor.Model.Hash);
+    }
+    else
+    {
+        hashlink += constructor.Model.Hash;
+    }
+}
+
+<link href="/Content/Styles/constructor.css" rel="stylesheet" type="text/css" />
+<script src="/Scripts/constructor.js" type="text/javascript"></script>
+<script src="/Scripts/constructor_history.js" type="text/javascript"></script>
+<script src="/Scripts/driverside.js" type="text/javascript"></script>
+<script src="/Scripts/carousel.js" type="text/javascript"></script>
+<script src="/Scripts/steps_animator.js" type="text/javascript"></script>
+
+<div class="mainPageB" style="height: 780px;">
+
+    <div class="textfield">
+        
+        <p style="margin:25px 0 25px 0;">
+            @ConstructorHtmlHelpers.Service()
+        </p>
+
+        <div class="header" style="text-align:center;">
+            <h1>@ViewBag.Title</h1>
+        </div>
+        <div class="subheader">
+            @*<a href="?t=lux">для Lux</a> | <span class="current_subheader">для Eco</span> | <a href="?t=compact">для Compact</a> (<a class="f1" href="/Systems">в чем отличия систем?</a>)*@
+        </div>
+
+    </div>
+
+    <div class="constructor">
+
+        <div class="window eco">
+            <div class="total">
+                <p>
+                    <span class="amount"><span>@constructor.Model.Amount</span> руб</span>
+                    <span class="price_dimention"> за <span class="price">@constructor.Model.PriceDimention</span> м²</span><span class="amount"> *</span>
+                </p>
+            </div>
+            <div class="hash">
+                <p style="margin-top: 10px;">
+                    <input class="Green gradient_green" type="button" value="добавить в заказ" onclick="constructor_history_add()" style="padding:3px 10px 3px 10px;"/>
+                </p>
+            </div>
+        </div>
+
+        <div class="heighter">
+            <h3 class="step step1" id="heighter_step">1</h3>
+            <div class="top"><u></u><s></s></div>
+            <i></i>
+            <div class="unit value">
+                <u></u>
+                <input type="text" class="unit40" id="height" value="@constructor.Model.Height" defaultvalue="@constructor.Model.Height" />
+                <s></s>
+                <a href="/Constructor/Measurement">как измерить?</a>
+            </div>
+            <i></i>
+            <div class="bottom"><u></u><s></s></div>
+        </div>
+
+        <div class="widther">
+            <h3 class="step step2" id="widther_step">2</h3>
+            <div class="left"><u></u><s></s></div>
+            <i></i>
+            <div class="unit value">
+                <u></u>
+                <input type="text" class="unit40" id="width" value="@constructor.Model.Width" defaultvalue="@constructor.Model.Width" />
+                <s></s>
+                <a href="/Constructor/Measurement">как измерить?</a>
+            </div>
+            <i></i>
+            <div class="right"><u></u><s></s></div>
+        </div>
+
+        <div class="driverside">
+            <h3 class="step step3" id="driverside_step">3</h3>
+            <input type="hidden" id="SelectedDriverSide" value="@constructor.Model.DriverSide" />
+            <a href="#">
+                <div class="circle"></div>
+                <div class="caption">
+                    <p class="right">
+                        Управление СПРАВА<br/>
+                        <span>сделать слева</span>
+                    </p>
+                    <p class="left">
+                        Управление СЛЕВА<br/>
+                        <span>сделать справа</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div class="carousel" id="ClothCarousel">
+            <h3 class="step step4" id="ClothCarousel_step">4</h3>
+            <input type="hidden" class="SelectedItemID" value="@palette.SelectedCloth.Id" />
+            <ul>
+                @foreach (Cloth AvailableCloth in palette.AvailableClothes)
+                {
+                    <li id="@(AvailableCloth.Id)">
+                        <img src="@(AvailableCloth.Img)" alt="Выбранная ткань"/>
+                        <input type="hidden" class="SelectedItemName" value="@(AvailableCloth.Name)&nbsp;@(AvailableCloth.SubName)" />
+                        <input type="hidden" class="SelectedItemPrice" value="@AvailableCloth.Price" />
+                    </li>
+                }
+            </ul>
+            <div class="topplate">
+                <a href="/Palette">посмотреть все ткани</a>
+            </div>
+            <div class="mask">
+                <div class="up_turn"></div>
+                <a href="#" class="magnifier"></a>
+                <div class="down_turn"></div>
+            </div>
+            <div class="btmplate">
+                <div class="description">
+                    <p class="SelectedItemName"><a href="#"></a></p>
+                    <p class="SelectedItemPrice"><span></span> руб/м²</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel" id="ShapeCarousel">
+            <h3 class="step step5" id="ShapeCarousel_step">5</h3>
+            <input type="hidden" class="SelectedItemID" value="@constructor.Model.SelectedShape.Id" />
+            <ul>
+                @foreach (Shape AvailableShape in constructor.Model.AvailableShapes)
+                {
+                    <li id="@(AvailableShape.Id)">
+                        <img src="@(AvailableShape.Img)" alt="Выбранный профиль"/>
+                        <input type="hidden" class="SelectedItemName" value="@(AvailableShape.Name)" />
+                    </li>
+                }
+            </ul>
+            <div class="topplate"></div>
+            <div class="mask">
+                <div class="up_turn"></div>
+                <div class="down_turn"></div>
+            </div>
+            <div class="btmplate">
+                <div class="description">
+                    <p class="SelectedItemName"><span></span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="textfield" style="margin-top: 560px;">
+        <p style="margin: 0 0 0 60px; text-indent: 0;">
+            ¹ &nbsp;Цена системы с коробом зависит от площади полотна<br/>
+            ² &nbsp;@constructor.Model.MinPriceAreaWarning<br/>
+            ³ &nbsp;Min сумма заказа - @constructor.Model.MinPayment руб. <a href="/MinPayment">Подробнее...</a>
+        </p>
+        
+    </div>
+
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+    <div id="constructor_history_plate" class="sidebar_plate" style="width:188px; text-align:center;">
+        <p class="top" style="">
+            <span class="constructor_history_row template">
+                <img src="" alt=""/>
+                <input type="hidden" value="0" class="constructor_history_rowprice" />
+                <a href="#" class="constructor_history_rowlink"></a>
+                <a href='#' class='constructor_history_rowremove'>&times;</a>
+            </span>
+            <span>Заказ:</span>
+        </p>
+        <p class="body_default">
+           Нажмите кнопку <br/> "добавить в заказ"
+        </p>
+        <p class="body">
+        </p>
+        <p class="bottom">
+            <span>0</span> руб
+        </p>
+        <p class="for_order" style="display:none;">
+            Для заказа позвоните по телефону <strong>@CommonHtmlHelpers.Phone()</strong>
+        </p>
+    </div>
+
+    <table id="stephelp" class="help">
+        <tr class="top"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+        <tr class="body">
+            <td class="l"></td>
+            <td class="m">
+                <p class="step1"><b>1.</b> Укажите высоту шторы</p>
+                <p class="step2"><b>2.</b> Укажите ширину</p>
+                <p class="step3"><b>3.</b> Выберите сторону, где будет располагаться управляющая цепочка</p>
+                <p class="step4"><b>4.</b> Выберите ткань</p>
+                <p class="step5"><b>5.</b> Выберите цвет короба и направляющего профиля</p>
+            </td>
+            <td class="r"></td>
+        </tr>
+        <tr class="bottom"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+    </table>
+
+</div>
+
+<div class="clear"></div>
+

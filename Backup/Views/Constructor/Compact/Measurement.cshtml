@@ -1,0 +1,109 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{
+    PaletteModel palette = (PaletteModel)ViewData["palette"];
+
+    ViewBag.Title = "Замеры окон перед установкой рулонных штор";
+    ViewBag.MetaKeywords = "замер окон рулонная штора на створка пластиковое окно";
+    ViewBag.MetaDescription = "замеры окон перед установкой рулонных штор на пластиковые окна";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<script src="/Scripts/measurement.js" type="text/javascript"></script>
+
+<div class="mainPageB">
+    
+    <div class="textfield">
+        
+        <div class="header">
+            <a href="/Constructor">Расчет цены</a> | <h1>@ViewBag.Title</h1> | <a href="/Palette">Подбор ткани</a> | <a href="/Constructor/Installation">Установка</a>
+        </div>
+
+        <div class="subheader" style="margin-left: 90px;">
+            <a href="?t=lux">для Lux</a> | <a href="?t=eco">для Eco</a> | <span class="current_subheader">для Compact</span> (<a class="f1" href="/Systems">в чем отличия систем?</a>)
+        </div>
+
+        <p>
+            <strong>Замер системы без короба и направляющих (Compact) достаточно прост</strong>. Для замера потребуется рулетка. Различия в замерах определяются в основном формой оконного штапика. 
+            Штапик - это узкая рейка, служащая для укрепления стекол в раме и декоративной окантовки. На картинках внизу он обозначен оранжевым цветом:
+        </p>
+		    
+        <div class="triptych">
+            <div style="width: 33%;">
+                <a href="/Content/Images/Illustrations/1-1.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/1-1.jpg" alt="круглый штапик" height="300" />
+                    <p>круглый штапик</p>
+                </a>
+            </div>
+			<div style="width: 33%;">
+                <a href="/Content/Images/Illustrations/2-1.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/2-1.jpg" alt="фигурный штапик" height="300" />
+                    <p>фигурный штапик</p>
+                </a>
+            </div>
+			<div style="width: 33%;">
+                <a href="/Content/Images/Illustrations/3-1.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/3-1.jpg" alt="прямой штапик" height="300" />
+                    <p>прямой штапик</p>
+                </a>
+            </div>
+        </div>
+
+        <p>
+            Элементы системы (кронштейны и магниты) могут быть закреплены только на поверхностях окна, параллельных плоскости стекла. 
+            Необходимо измерить ширину от угла левого штапика до угла правого и высоту от угла верхнего штапика до угла нижнего. Угол штапика показан ниже:
+        </p>
+        <div class="triptych">
+            <div style="width: 33%;">
+                <a href="/Content/Images/Illustrations/1-2.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/1-2.jpg" alt="круглый штапик" height="300" />
+                    <p>нет угла, замер производится от края штапика</p>
+                </a>
+            </div>
+			<div style="width: 33%;">
+                <a href="/Content/Images/Illustrations/2-2.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/2-2.jpg" alt="фигурный штапик" height="300" />
+                    <p>угол фигурного штапика</p>
+                </a>
+            </div>
+			<div style="width: 33%;">
+                <a href="/Content/Images/Illustrations/3-2.jpg" target="_blank">
+                    <img src="/Content/Images/Illustrations/3-2.jpg" alt="прямой штапик" height="300" />
+                    <p>угол прямого штапика, самый распространенный вариант</p>
+                </a>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <a name="measurements"></a>
+        <a name="width"></a>
+        <p class="width measurements">
+            <strong>Ширина</strong> шторы должна быть от 200 мм до 1800 мм. Минимальная ширина ограничена конструкцией механической части, 
+            максимальная - допустимой нагрузкой на трубу, на которую наматывается ткань.
+        </p>
+        <a name="height"></a>
+        <p class="height measurements">
+            <strong>Максимальная высота</strong> шторы зависит от толщины ткани, так как в свернутом состоянии рулон не должен застревать между створкой и осью вращения (это расстояние определяется высотой кронштейна). 
+            В карточке каждой ткани, например <a href="/Palette/Cloth/@palette.SelectedCloth.Id">@(palette.SelectedCloth.Name)&nbsp;@(palette.SelectedCloth.SubName)</a>, указана максимальная допустимая высота.
+        </p>
+        <p>
+            <strong>Необходимо убедиться</strong>, что расположению элементов системы не будут мешать откосы окна, а также части оконной фурнитуры - ручки, датчики сигнализаций,
+            наклейки c логотипом производителя и т.п. Для систем без короба учесть эти требования проще, чем для <a href="/Constructor/Measurement/Eco">систем с коробом</a>. 
+            Чаще всего откосы скрывают большую часть рамы сверху или по бокам, так что свободного пространства не хватает для монтажа кронштейнов.
+            В таких случаях систему смещают вниз при монтаже, а учитывать это условие в момент замера можно, но не требуется.
+        </p>
+        <p>
+            @ConstructorHtmlHelpers.Service()
+        </p>
+    </div>
+</div>
+
+<div class="sidebar">
+
+    @ConstructorHtmlHelpers.VisitCard()
+
+</div>
+
+<div class="clear"></div>
+

@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Keywords" content="@ViewBag.MetaKeywords"/>
+        <meta name="Description" content="@ViewBag.MetaDescription"/>
+
+        <title>@(ViewBag.Title + (ViewBag.Title == "" ? "" : ". ") + "MIKETTI - рулонные шторы")</title>
+        <script src="/Scripts/jquery-1.7.2.min.js" type="text/javascript"></script>
+        <script src="/Scripts/prompts.js" type="text/javascript"></script>
+        <script src="/Scripts/jquery.cookie.js" type="text/javascript"></script>
+        @*<script src="/Scripts/ajax_navigation.js" type="text/javascript"></script>*@
+
+        <link rel="image_src" href="/Content/Images/logo.jpg" />
+
+        <link href="/Content/Styles/main.css" rel="stylesheet" type="text/css" />
+        <link href="/Content/Styles/sidebar.css" rel="stylesheet" type="text/css" />
+        <link href="/Content/Styles/prompts.css" rel="stylesheet" type="text/css" />
+
+        <script type="text/javascript" src="http://vk.com/js/api/share.js?11" charset="windows-1251"></script>
+        
+        <!-- Google.Analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', '@System.Configuration.ConfigurationManager.AppSettings["AnalyticsAccountNumber"]']);
+            _gaq.push(['_setDomainName', 'miketti.ru']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_trackPageview']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <!-- Yandex.Metrika -->
+        <script type="text/javascript">
+            (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter21249292 = new Ya.Metrika({ id: 21249292,
+                            webvisor: true,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true
+                        });
+                    } catch (e) { }
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else { f(); }
+            })(document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="//mc.yandex.ru/watch/21249292" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        
+    </head>
+
+    <body>
+        
+        <div class="shadowBG">
+            <div class="wrap">
+                <div class="tower">
+                    <div class="towertop">
+                        <div class="mikettilogo">
+                            <p class="mikettiname">MIKETTI</p>
+                            <p class="curregion"><strong>САНКТ-ПЕТЕРБУРГ</strong></p>
+                        </div>
+                        <div class="contact">
+                            <p class="phone">@CommonHtmlHelpers.Phone()</p>
+                            <p class="curregion"><strong>БЫСТРЫЙ ЗАКАЗ</strong></p>
+                        </div>
+                    </div>
+                    
+                    <div class="towerbottom">
+                        <div class="navigation">
+                            @{
+                                string ControllerName = ViewContext.RequestContext.RouteData.Values["controller"] as string;
+                                string ActionName = ViewContext.RequestContext.RouteData.Values["action"] as string;
+                            }
+                            <a href="/Home" class="@CommonHtmlHelpers.MenuItemClass(ControllerName, "home")">Главная<br /><span>рулонные шторы</span><i></i><b></b></a>
+                            <a href="/Constructor/Measurement" class="@CommonHtmlHelpers.MenuItemClass(ControllerName, "constructor", ActionName, "measurement")">Замер<br /><span>правила замера</span><i></i><b></b></a>
+                            <a href="/Palette" class="@CommonHtmlHelpers.MenuItemClass(ControllerName,  "palette")">Ткани<br /><span>выбор по каталогу</span><i></i><b></b></a>
+                            <a href="/Constructor" class="@CommonHtmlHelpers.MenuItemClass(ControllerName, "constructor", ActionName, "index")">Калькулятор<br /><span>оформление заказа</span><i></i><b></b></a>
+                            <a href="/Photos" class="@CommonHtmlHelpers.MenuItemClass(ControllerName,  "photos")">Фото<br /><span>наши работы</span><i></i><b></b></a>
+                            <a href="/Service" class="@CommonHtmlHelpers.MenuItemClass(ControllerName,  "service")">Доставка<br /><span>дополнительные услуги</span><i></i><b></b></a>
+                            @*<a href="http://www.vk.com/miketti" target="_blank" class="@CommonHtmlHelpers.MenuItemClass(ControllerName, "socialnetwork")">Группа ВКонтакте<br /><span>мы и наши клиенты</span><i></i><b></b></a>*@
+                        </div>
+                    </div>
+                </div>
+                <div class="castle" >
+                    
+                    @RenderBody()
+
+                </div> 
+                
+                <div class="catacombs">
+                    
+                    <div class="CatLinksBox">
+                        <p><a id="HomeIndexLink" class="FooterLinkItem" href="/Home">Главная</a></p>
+                        <p><a id="HomeSystemsLink" class="FooterLinkItem" href="/Systems">Виды систем</a></p>
+                        <!--p class="qwer1"><a href="#">Ссылка</a></p-->
+                    </div>
+                    
+                    <div class="CatLinksBox" style="display: inline; margin: 0 0 0 40px;">
+                        <p><a href="/Palette">Подбор ткани</a></p>
+                        <p><a id="ConstructorIndexLink" class="FooterLinkItem" href="/Constructor">Расчет цены</a></p>
+                        <p><a id="ConstructorIndexLink" class="FooterLinkItem" href="/Service">Доставка</a></p>
+                        
+                    </div>
+                    
+                    <div class="CatLinksBox" style="display: inline; margin: 0 0 0 80px;">
+                        <p><a href="/Constructor/Measurement">Правила замера</a></p>
+                        <p><a href="/Constructor/Installation">Установка</a></p>
+                    </div>
+
+                    <noindex>
+                        <div class="pointbox" style="margin: -45px 0 0 0;">
+                            <div class="CatInfoBox">
+                                <p class="dotted">администратор сайта</p>
+                                <p><a href="mailto:info@miketti.ru">info@miketti.ru</a></p>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="CatCopyBox">
+                                <p>Все права защищены. Полное или частичное копирование материалов запрещено, при согласованном использовании материалов необходима ссылка на ресурс.</p>
+                                <p>Copyright © 2011-@CommonHtmlHelpers.Year() «www.miketti.ru».</p>
+                            </div>
+                        </div>
+                    </noindex>
+
+                    @*<div class="CatCountersBox">
+                        <script type="text/javascript">
+                            try {
+                                document.write(VK.Share.button(false, { type: "round", text: "Поделиться ВКонтакте" }));
+                            }
+                            catch (e) { }
+                        </script>
+                    </div>*@
+                    <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+                    <div class="yashare-auto-init CatCountersBox" data-yashareL10n="ru"
+                        data-yashareQuickServices="yaru,vkontakte,facebook,twitter,odnoklassniki,moimir,gplus" 
+                        data-yashareTheme="counter">
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div> 
+            </div>
+        </div>
+
+        <table id="message_box" class="help">
+            <tr class="top"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+            <tr class="body">
+                <td class="l"></td>
+                <td class="m">
+                    <span></span>
+                </td>
+                <td class="r"></td>
+            </tr>
+            <tr class="bottom"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+        </table>
+
+    </body>
+</html>

@@ -1,0 +1,65 @@
+﻿@using MvcApplication1.Models
+@using MvcApplication1.Objects
+
+@{   
+    ConstructorModel constructor = (ConstructorModel)ViewData["constructor"];
+    List<Photo> Photos = (List<Photo>)ViewData["Photos"];
+
+    ViewBag.Title = "Фото наших работ и примеры из каталога интерьеров";
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SiteLayout.cshtml";
+}
+
+<link href="/Content/Styles/cloth.css" rel="stylesheet" type="text/css" />
+
+<div class="mainPageB">
+    
+    <div class="textfield">    
+        <div class="header">
+            <h1>@ViewBag.Title</h1>
+        </div>
+        <div class="subheader"></div>
+    </div>
+        
+    <div class="photos">
+        @{
+            bool odd = true;
+        }
+        @foreach (Photo photo in Photos)
+        {
+            odd = !odd;
+            Cloth owner = (Cloth)photo.Owner;
+            <div class="photo">
+                <a href="@photo.Img"><img src="@photo.Img" alt=""/></a>
+                <a href="/Palette/Cloth/@owner.Id">@owner.Name</a><br/>
+                <p>@Html.Raw(photo.Description)</p>
+            </div>
+            if (odd)
+            { 
+                <div class="clear"></div>
+            }
+        }
+    </div>
+
+</div>
+
+<div class="sidebar">
+    
+    @ConstructorHtmlHelpers.VisitCard()
+
+    <table id="clothhelp" class="help">
+        <tr class="top"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+        <tr class="body">
+            <td class="l"></td>
+            <td class="m">
+                <p>К сожалению, экран не может достоверно передать цвет и фактуру ткани</p>
+                <p style="margin-top: 5px;">При подборе ткани для заказа можно свериться с каталогом образцов у <a href="/Service">нашего сотрудника</a></p>
+                <p style="text-align:center; margin-top: 5px;"><img src="/Content/Images/Sidebar/catalog.png" alt="Коллекция рулонных штор"></p>
+            </td>
+            <td class="r"></td>
+        </tr>
+        <tr class="bottom"><td class="l"></td><td class="m"></td><td class="r"></td></tr>
+    </table>
+
+</div>
+<div class="clear"></div>
+
