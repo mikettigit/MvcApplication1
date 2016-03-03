@@ -75,7 +75,12 @@
                             <p class="curregion"><strong>САНКТ-ПЕТЕРБУРГ</strong></p>
                         </div>
                         <div class="contact">
-                            <p class="phone">@CommonHtmlHelpers.Phone()</p>
+                            <script type="text/javascript">
+                                $(document).ready(function(){
+                                    $("#phone_place").text('@CommonHtmlHelpers.Phone()');
+                                })
+                            </script>
+                            <p class="phone" id="phone_place"></p>
                             <p class="curregion"><strong>БЫСТРЫЙ ЗАКАЗ</strong></p>
                         </div>
                     </div>

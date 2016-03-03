@@ -195,8 +195,13 @@
         <p class="bottom">
             <span>0</span> руб
         </p>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".for_order strong").text('@CommonHtmlHelpers.Phone()');
+            })
+        </script>
         <p class="for_order" style="display:none;">
-            Для заказа позвоните по телефону <strong>@CommonHtmlHelpers.Phone()</strong>
+            Для заказа позвоните по телефону <strong></strong>
         </p>
     </div>
 

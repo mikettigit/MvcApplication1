@@ -17,7 +17,12 @@
                     </div>
                     <div class="middleW">
                 
-                        <p class="phone"><i></i><span>@CommonHtmlHelpers.Phone()</span></p>
+                        <script type="text/javascript">
+                            $(document).ready(function(){
+                                $(".phone span").text('@CommonHtmlHelpers.Phone()');
+                            })
+                        </script>
+                        <p class="phone"><i></i><span></span></p>
                         <p class="email"><span><a href="mailto:@CommonHtmlHelpers.Email()">@CommonHtmlHelpers.Email()</a></span></p>
                         <p class="employee"><span>@*@CommonHtmlHelpers.Employee()*@</span></p>
 
@@ -78,7 +83,12 @@
                 <div class="middleW">
                     <p class="order">дождитесь нас -</p>
                     <p class="order">@DeclensionHelper.GetDeclension(days, "остался", "осталось", "осталось") всего @days.ToString() @DeclensionHelper.GetDeclension(days, "день", "дня", "дней") ;)</p>
-                    <p class="phone" style="text-align: center; margin-top: 10px;">@CommonHtmlHelpers.Phone()</p>
+                    <script type="text/javascript">
+                            $(document).ready(function(){
+                                $(".phone span").text('@CommonHtmlHelpers.Phone()');
+                            })
+                    </script>
+                    <p class="phone" style="text-align: center; margin-top: 10px;"></p>
                     <p class="email" style="text-align: center; margin-top: 1px;"><a href="mailto:@CommonHtmlHelpers.Email()">@CommonHtmlHelpers.Email()</a></p>
                 </div>
                 <div class="bottomW"></div>   
